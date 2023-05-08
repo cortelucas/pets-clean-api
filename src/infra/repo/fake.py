@@ -7,7 +7,7 @@ class FakerRepo:
 
     @classmethod
     def insert_user(cls, name: str, password: str):
-        """Something"""
+        """Something method that inserts a user into the repository"""
 
         with DBConnectionHandler() as db_connection:
             try:
