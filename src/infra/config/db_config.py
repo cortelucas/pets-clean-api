@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 
 
-class DbConnectionHandler:
+class DBConnectionHandler:
     """SQLAlchemy database connection"""
 
     def __init__(self) -> None:
