@@ -6,6 +6,7 @@ dill==0.3.6
 distlib==0.3.6
 filelock==3.12.0
 flake8==6.0.0
+greenlet==2.0.2
 identify==2.5.24
 iniconfig==2.0.0
 isort==5.12.0
@@ -23,6 +24,8 @@ pyflakes==3.0.1
 pylint==2.17.4
 pytest==7.3.1
 PyYAML==6.0
+SQLAlchemy==2.0.12
 tomlkit==0.11.8
+typing_extensions==4.5.0
 virtualenv==20.23.0
 wrapt==1.15.0
