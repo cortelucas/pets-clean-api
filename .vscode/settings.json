@@ -3,5 +3,13 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "python.formatting.provider": "none",
-    "sqltools.connections": []
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "pets",
+            "database": "${workspaceFolder:pets-clean-api}/pets.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
 }
