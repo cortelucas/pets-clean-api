@@ -1,4 +1,5 @@
 from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 
 
 class DBConnectionHandler:
@@ -20,3 +21,11 @@ class DBConnectionHandler:
         engine = create_engine(self.__connection_string)
 
         return engine
+
+    def __enter__(self):
+        engine = create_engine(self.__connection_string)
+
+        session_maker = sessionmaker()
+        self.session = session_maker(bind=engine)
+
+        return self
